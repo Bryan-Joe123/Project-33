@@ -62,6 +62,11 @@ function draw() {
  //text("Score : "+score,20,30);
   Engine.update(engine);
 
+
+  fill("yellow");
+  rectMode(CENTER);
+  rect(width/2,480,width,10);
+
   if(particles){
     if(particlesState!="game over"){
       particles.display();
