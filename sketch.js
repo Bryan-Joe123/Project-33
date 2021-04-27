@@ -67,6 +67,19 @@ function draw() {
   rectMode(CENTER);
   rect(width/2,480,width,10);
 
+  text("500",575,600)
+  text("500",665,600)
+  text("500",740,600)
+
+  text("200",575-550,600)
+  text("200",665-560,600)
+  text("200",740-560,600)
+
+  text("100",575-235,600)
+  text("100",665-245,600)
+  text("100",740-245,600)
+  text("100",740-480,600)
+
   if(particles){
     if(particlesState!="game over"){
       particles.display();
@@ -109,7 +122,7 @@ function draw() {
 
 function mousePressed(){
   if(particlesState == "end"&&turn<5){
-    particles=new Particle(random(220,260),-20,10);
+    particles=new Particle(random(200,width-200),-20,10);
     particlesState = "fall";
   }
 }
